@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulation</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: url('images/congr.jpg') no-repeat;
+            background-size: cover;
+        }
+        
+        .center {
+            background-color: rgba(240, 248, 255, 0.384);
+            width: 100%;
+            height: 100%;
+        }
+        
+        h1 {
+            font-size: 80px;
+            margin-top: 20vh;
+            color: blue;
+        }
+        
+        p {
+            color: rgb(39, 39, 39);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+        div .counter {
+            margin-right: 30%;
+        }
+        
+        .container h1 {
+            text-transform: uppercase;
+            margin: 0px;
+            color: #140185;
+            font-size: 35px;
+            letter-spacing: 5px;
+        }
+        
+        .container h2 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+        .count {
+            margin: 10px 0;
+        }
+        
+        .countd {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 2px solid;
+            margin: 0 5px;
+            font-size: 12px;
+            border-radius: 50%;
+            border-color: #24047a;
+            overflow: hidden;
+        }
+        
+        .countd span {
+            display: block;
+            font-size: 26px;
+            margin-top: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            .counter {
+                zoom: .4;
+                margin-right: 0%;
+            }
+            .counter h1 {
+                font-size: 40px;
+            }
+            .counter h2 {
+                font-size: 30px;
+            }
+            .countd {
+                width: 60px;
+                height: 60px;
+                border: 3px solid black;
+                border-radius: 0;
+            }
+            .countd span {
+                display: block;
+                font-size: 30px;
+                margin-top: 14px;
+                font-weight: bold;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div class="back">
+            <h1>Congratulation</h1>
+            <p>You have successfully updated for event .</p>
+            <div>
+                <li class="counter" style="margin-left: 30%;">
+                    <div class="container">
+                        <h1>YANTRAGENE 2020</h1>
+                        <h2>We are coming soon.</h2>
+
+                        <div class="count">
+                            <div class="countd">
+                                <span id="day">00</span> DAYS
+                            </div>
+
+                            <div class="countd">
+                                <span id="hour">00</span> HOURS
+                            </div>
+
+                            <div class="countd">
+                                <span id="minute">00</span> MINUTES
+                            </div>
+
+                            <div class="countd">
+                                <span id="second">00</span> SECONDS
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <p>For more information see your Gmail.</p>
+            <p style="color: rebeccapurple;">Thank you for participating.</p>
+        </div>
+    </center>
+    <script type="text/javascript">
+        var count = new Date("2020-03-25").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var d = count - now;
+
+            var day = Math.floor(d / (1000 * 60 * 60 * 24));
+            var hour = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minute = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+            var second = Math.floor((d % (1000 * 60)) / 1000);
+
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("minute").innerHTML = minute;
+            document.getElementById("second").innerHTML = second;
+        }, 1000);
+
+        function closenav() {
+            document.getElementById("nav_menu").style.height = "0% ";
+        }
+
+        function opennav() {
+            document.getElementById("nav_menu").style.height = "100% ";
+        }
+    </script>
+
+</body>
+
+
+</html>

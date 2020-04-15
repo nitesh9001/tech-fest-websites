@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript">
+        function closenav() {
+            document.getElementById("nav_menu").style.height = "0% "
+        }
+
+        function opennav() {
+            document.getElementById("nav_menu").style.height = "110% "
+        }
+    </script>
+    <title>Event</title>
+</head>
+
+<body>
+    <div class="column1">
+        <div class="header">
+            <div class="logo">
+                <img src="icons/logo.png " width="50px " height="50px ">
+                <span onclick="opennav()" class="menu ">&#9776;</span>
+                <nav id="nav_menu">
+                    <img src="icons/logo.png " width="50px " height="50px ">
+                    <span onclick="closenav()" style=" color: rgb(5, 255, 242);
+                    font-size: 70px;
+                    z-index: 10;
+                    float: right;
+                    margin-right: 2%;
+                    top: 2%;
+                    cursor: pointer;">&times;</span>
+                    <ul class="nav_ul">
+                        <a href="homeme.html">Home</a>
+                        <a href="schedule.html" target="_blank ">Schedule</a>
+                        <a href="events.html">Events</a>
+                        <a href="sponsers.html">Sponsers</a>
+                        <a href="team.html">Team</a>
+                        <a href="faq.html">FAQ</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <center>
+            <ul>
+                <li>
+                    <div class="hovereffect">
+                        <img src="images/formal.jpg" width="600px" height="400px">
+                        <div class="overlay">
+                            <h2>Branch Events</h2>
+                            <a href="branch_eventcse.html" class="branch_name">C S E</a>
+                            <a href="branch_eventece.html" class="branch_name">E C E</a>
+                            <a href="branch_eventme.html" class="branch_name">M E</a>
+                            <a href="branch_eventae.html" class="branch_name">A E</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hovereffect">
+                        <img src="images/informal.png" width="600px" height="400px">
+                        <div class="overlay">
+                            <h2>Informal Events</h2>
+                            <a href="informal.html" class="branch_name">View  Informal Events</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </center>
+        <div style="background-color: rgb(10, 5, 54); width: 100%; height: 30px;position: absolute;top: 120vh;">
+            <h6 style="color: rgb(255, 255, 255); font-size: 12px; text-align: center;">Yantargene © All rights reserved | Privacy & policy</h6>
+        </div>
+    </div>
+</body>
+
+</html>

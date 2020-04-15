@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1 initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script type="text/javascript">
+        var count = new Date("2020-03-25").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var d = count - now;
+
+            var day = Math.floor(d / (1000 * 60 * 60 * 24));
+            var hour = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minute = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+            var second = Math.floor((d % (1000 * 60)) / 1000);
+
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("minute").innerHTML = minute;
+            document.getElementById("second").innerHTML = second;
+        }, 1000);
+
+        function closenav() {
+            document.getElementById("nav_menu").style.height = "0% ";
+        }
+
+        function opennav() {
+            document.getElementById("nav_menu").style.height = "100% ";
+        }
+    </script>
+
+
+</head>
+
+
+<body class="body">
+    <div id="back"></div>
+    <div class="column1">
+        <div class="header">
+            <div class="logo">
+                <a href="http://fgiet.ac.in/" target="_blank"><img src="icons/logo.png" class="logo" width="50px" height="50px"></a>
+                <center style="position: relative; float:right;"><a href="http://www.csi-india.org/" target="_blank"><img src="icons/csi (1).png" width="40px" height="40px"></a><a href="http://www.isteonline.in/" target="_blank"><img src="icons/ISTE.png" width="40px" height="40px"></a></center>
+                <span onclick="opennav()" class="menu">&#9776;</span>
+                <nav id="nav_menu">
+                    <img src="icons/logo.png" width="50px" height="50px">
+                    <span onclick="closenav()" style=" color: rgb(5, 255, 242);
+                    font-size: 70px;
+                    z-index: 7;
+                    float: right;
+                    margin-right: 2%;
+                    top: 2%;
+                    cursor: pointer;">&times;</span>
+                    <ul>
+                        <a href="homeme.html">Home</a>
+                        <a href="schedule.html" target="_blank">Schedule</a>
+                        <a href="events.html">Events</a>
+                        <a href="sponsers.html">Sponsers</a>
+                        <a href="team.html">Team</a>
+                        <a href="faq.html ">FAQ</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <center>
+            <div class="images-section">
+                <img src="images/back1.png" width="600px" height="900px" class="back1">
+                <img src="icons/mainlogo.png" class="mainlogo" width="500px" height="500px">
+                <img src="images/pngwave.png" class="face" width="700px" style="position: fixed; left: 70%;top: 18%;opacity: .05; ">
+                <ul class="list-inline">
+                    <li>
+                        <div class="unit">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" width="32"><path d="M0 0h24v24H0V0z" fill="rgb(3,233,244)"/><path d="M17 10H7v2h10v-2zm4-7h-3V1h-2v2H8V1H6v2H3v18h18V3zm-2 16H5V8h14v11zm-5-5H7v2h7v-2z"/></svg>
+                            <!--<h5 class="text-spacing">March 26- 27, 2020</h5>-->
+                            <h5 class="text-spacing">Coming Soon</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit-body">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" class="spanicon" viewBox="0 0 24 24" width="32"><path d="M0 0h24v24H0z" fill="rgb(3,233,244)"/><path d="M5 20h14v2H5v-2zm7-13c-1.1 0-2 .9-2 2s.9 2 2 2a2 2 0 1 0 0-4zm0-5c3.27 0 7 2.46 7 7.15 0 3.12-2.33 6.41-7 9.85-4.67-3.44-7-6.73-7-9.85C5 4.46 8.73 2 12 2z" fill-rule="evenodd"/></svg>
+
+                            <h5 class="text-spacing-100">
+                                FGIET, Raebareli</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <ul>
+                    <li>
+
+                        <svg width="450px" height="300px" opacity=".5" class="svg_color" style="position: absolute;" margin-left="30px" viewBox="0 0 518 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+                           
+                            <defs>
+                                <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                    <stop stop-color="#150051" offset="0%"></stop>
+                                    <stop stop-color="#1C7CE0" offset="100%"></stop>
+                                </linearGradient>
+                                <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-2">
+                                    <stop stop-color="#00C9FF" offset="0%"></stop>
+                                    <stop stop-color="#92FE9D" offset="100%"></stop>
+                                </linearGradient>
+                                <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-3">
+                                    <stop stop-color="#A8C0FF" offset="0%"></stop>
+                                    <stop stop-color="#3F2B96" offset="100%"></stop>
+                                </linearGradient>
+                                <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-4">
+                                    <stop stop-color="#FF5F1D" offset="0%"></stop>
+                                    <stop stop-color="#00BFF5" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="css-gradient-examples">
+                                    <circle id="Oval" fill="url(#linearGradient-1)" cx="108" cy="199" r="100"></circle>
+                                    <circle id="Oval-Copy-4" fill="url(#linearGradient-2)" cx="413.5" cy="217.5" r="97.5"></circle>
+                                    <circle id="Oval-Copy-2" fill="url(#linearGradient-3)" cx="269.5" cy="115.5" r="67.5"></circle>
+                                    <circle id="Oval-Copy-3" fill="url(#linearGradient-4)" cx="261.5" cy="243.5" r="48.5"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                        <button class="button-event" onclick="window.location.href = 'events.html';">Events</button>
+                        <a href="login.php" target="_blank" style="text-decoration: none;"><button class="button-reg">Register</button></a></li>
+                    <li class="counter" style="margin-left: 30%;">
+                        <div class="container">
+                            <h1>YANTRAGENE 2020</h1>
+                            <h2>We are coming soon.</h2>
+
+                            <div class="count">
+                                <div class="countd">
+                                    <span id="day">00</span> DAYS
+                                </div>
+
+                                <div class="countd">
+                                    <span id="hour">00</span> HOURS
+                                </div>
+
+                                <div class="countd">
+                                    <span id="minute">00</span> MINUTES
+                                </div>
+
+                                <div class="countd">
+                                    <span id="second">00</span> SECONDS
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="social_nav">
+                <ul>
+                    <li class="twitter"><a href="mailto:fgiet.yantragene@gmail.com?subject=subject&cc=cc@example.com">Gmail<img src="icons/gmail.png" style="width:30px;"></a></li>
+
+                </ul>
+                <ul>
+                    <li class="Facebook"><a href="https://www.facebook.com/yantragene.fgiet/">Facebook<img src="icons/facebook.png" style="width:30px;"></a></li>
+
+                </ul>
+                <ul>
+                    <li class="Instagram"><a href="https://www.instagram.com/yantragene/">Instagram<img src="icons/insta.png" style="width:26px;"></a></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="scroll "><span style="border-bottom: 8px solid rgb(2, 255, 255); border-right: 8px solid rgb(2, 255, 255);text-shadow: 2px solid rgb(119, 61, 61); "></span>
+                <span style="border-bottom: 5px solid rgb(2, 255, 255); border-right: 5px solid rgb(2, 255, 255); "></span>
+                <span style="border-bottom: 4px solid rgb(2, 255, 255); border-right: 4px solid rgb(2, 255, 255); "></span>
+            </div>
+            <div class="main_h_events">
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/pubg.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>PUBG</h3><br>
+                                    <p class="ab_event">The opportunity of defeating the enemy is provided by the enemy himself. So in war, the way is to avoid what is strong, and strike at what is weak. He will win who knows when to fight and when not to fight. The supreme
+                                        art of war is to subdue the enemy without fighting.</p>
+                                    <a href="pubg.html" style="font-size:15px">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                   <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/bplan.png" width="600px" height="330px">
+                            </a>
+                            <a>
+
+                                <div class="discr_event">
+                                    <h3>B Plan</h3><br>
+                                    <p class="ab_event">The job marketplace has never been more welcoming for entrepreneurs who want to work for themselves. You don’t need a master’s degree, a thick portfolio, or an impressive resume to excel at entrepreneurship. The things
+                                        you need most are your presentation skills and your ability to tackle problems head-on.</p>
+                                    <a href="bplan.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/tech.jpg" width="600px" height="350px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Technical paper presentation</h3><br>
+                                    <p class="ab_event">This is a fairly new event at Yantragene. In this event, participants will present their research in the form of a technical paper that follows IEEE paper submission guidelines. The participants will express their views regarding a particular topic by their research and communicating </p><br>
+                                    <a href="technical.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div> 
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/openmic.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Open Mic</h3><br>
+                                    <p class="ab_event">An open mic generally is an event where
+                                    aspiring poets,stand up comedians or artists from various backgrounds come and perform.
+                                    So our event 'अमेय' is a small</p>
+                                    <a href="openmic.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/algo.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Algosense</h3><br>
+                                    <p class="ab_event">This event in Yantragene is all about Algorithms. We may not think about it very consciously, but every operation performed by our computer consists of algorithms. An algorithm is a sequence of unambiguous instructions.</p>
+                                    <a href="algosense.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/war.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Zumo War</h3><br>
+                                    <p class="ab_event"> It’s an event for the techies that want to show the sheer physical and mental prowess of the bots that they have created. Japanese Sumo Wrestling is a form of competitive full-contact wrestling where the wrestlers attempt
+                                        to force each other out of a circular ring</p>
+                                    <a href="zumowar.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/sky.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Sky RC</h3><br>
+                                    <p class="ab_event">The competetion requires a participant to design and fabricate an RC AIRCRAFT, (no readymade aircraft like RTF, ARF, BNF etc. are permitted) and perform a set of tasks.</p>
+                                    <a href="skyrc.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event_1">
+                        <ul class="evnt_part">
+                            <a>
+                                <img class="img_event" src="images/bridge.png" width="600px" height="330px">
+                            </a>
+                            <a>
+                                <div class="discr_event">
+                                    <h3>Bridge It</h3><br>
+                                    <p class="ab_event">Bridges across the globe make up some of the most beautiful landmarks on this Earth. However, it would be quite impossible to bring them to the kitchen table. Luckily, with a few bridge building techniques, </p>
+                                    <a href="bridgeit.html">Know More</a>
+                                </div>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            
+
+             
+                
+                </div>
+                
+            <div class="swiper-container">
+                <h1 class="throwback_1">Throwback</h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/17.jpg"></div>
+                    <div class="swiper-slide"><img src="images/1.JPG"></div>
+                    <div class="swiper-slide"><img src="images/2.JPG"></div>
+                    <div class="swiper-slide"><img src="images/4.JPG"></div>
+                    <div class="swiper-slide"><img src="images/5.JPG"></div>
+                    <div class="swiper-slide"><img src="images/6.JPG"></div>
+                    <div class="swiper-slide"><img src="images/7.JPG"></div>
+                    <div class="swiper-slide"><img src="images/11.jpg"></div>
+                    <div class="swiper-slide"><img src="images/8.JPG"></div>
+                    <div class="swiper-slide"><img src="images/9.JPG"></div>
+                    <div class="swiper-slide"><img src="images/10.JPG"></div>
+                    <div class="swiper-slide"><img src="images/12.JPG"></div>
+                    <div class="swiper-slide"><img src="images/13.JPG"></div>
+                    <div class="swiper-slide"><img src="images/14.jpg"></div>
+                    <div class="swiper-slide"><img src="images/15.jpg"></div>
+                    <div class="swiper-slide"><img src="images/16.jpg"></div>
+                    <div class="swiper-slide"><img src="images/18.jpg"></div>
+                    <div class="swiper-slide"><img src="images/19.jpg"></div>
+                    <div class="swiper-slide"><img src="images/20.jpg"></div>
+                    <div class="swiper-slide"><img src="images/21.jpg"></div>
+                    <div class="swiper-slide"><img src="images/22.jpg"></div>
+                    <div class="swiper-slide"><img src="images/23.JPG"></div>
+                    <div class="swiper-slide"><img src="images/24.JPG"></div>
+                    <div class="swiper-slide"><img src="images/25.jpg"></div>
+                    <div class="swiper-slide"><img src="images/26.jpg"></div>
+
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+            <div class="about " style="width: 100%;position: relative;margin-top: 7%;"><br>
+
+                <h1>ABOUT US</h1>
+                <section class="d_about_us">
+                    <p>Yantragene is the annual science and technology fest of the Feroze Gandhi Institute Of Engineering and Technology Raebareli. Started in 2015 with the aim of providing a platform for the student community to develop and showcase their
+                        technical prowess, a grand two-day event on the campus of FGIET Raebareli attracting people from all walks of life including students, academics, professionals and the general public. Year after year, Techfest explores the various
+                        aspects of science and technology and the profound impacts they have on our lives. For the last 5 years, Yantragene has constantly grown, evolved, and pushed the boundaries of what a college fest can be. With something to offer
+                        for everyone, Yantragene is the ideal destination for all technophiles: young or beginner or expert, student or professional to witness, learn and experience the wonders of science and technology. This year marks the 5th Edition
+                        of Yantragene, FGIET Raebareli. The fest shall take place from <!--26th to 27th of March,-->coming soon 2020 at the beautiful, green campus of FGIET Raebareli, India. Boasting of a huge roster of exciting and engaging events, this edition of Techfest
+                        promises to be grander, greater and more glorious than ever before. So grab your friends, mark your calendars, and gear up for Yantragene Science and Technology Fest. Welcome to Yantragene 2020.</p>
+                </section>
+                <div class="spaceX show-on-scroll is-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org" id="camera-loader" width="85.708488" height="100">
+                  <defs id="defs12"></defs>
+                  <path id="camera-body" d="M 51.5625 0 C 50.667739 -0.00962983 49.756943 0.05800477 48.84375 0.1875 C 41.018415 1.2971691 35.117198 7.3376842 33.8125 14.71875 C 30.504071 7.9918491 23.138091 3.8277945 15.3125 4.9375 C 5.573576 6.3185261 -1.1937811 15.321773 0.1875 25.0625 C 1.030765 31.00916 4.7245026 35.850708 9.6875 38.40625 L 10.59375 44.84375 L 41.21875 40.5 C 42.618434 40.301472 43.966737 41.101389 44.15625 42.4375 C 44.34576 43.773612 43.274684 44.957723 41.875 45.15625 L 11.25 49.5 L 12.40625 57.6875 C 12.593105 59.005185 13.837018 59.937079 15.15625 59.75 L 64.25 52.78125 C 65.567815 52.594377 66.499355 51.348937 66.3125 50.03125 L 63.5625 30.78125 C 67.618077 26.946961 69.843395 21.259142 69 15.3125 C 67.748216 6.4849658 60.211858 0.09304631 51.5625 0 z M 51.28125 3.75 C 58.168631 3.6506107 64.22589 8.6859174 65.21875 15.6875 C 66.295328 23.279482 61.029156 30.329715 53.4375 31.40625 C 45.84552 32.482829 38.795329 27.18573 37.71875 19.59375 C 36.641441 11.998855 41.938942 4.9828747 49.53125 3.90625 C 50.124347 3.8221462 50.697574 3.7584222 51.28125 3.75 z M 17.5625 8.53125 C 24.449868 8.4318561 30.507144 13.46718 31.5 20.46875 C 32.576577 28.060719 27.310389 35.110969 19.71875 36.1875 C 12.126783 37.264077 5.0765804 31.966969 4 24.375 C 2.9226914 16.780121 8.2202041 9.7641225 15.8125 8.6875 C 16.405598 8.603395 16.978824 8.5396714 17.5625 8.53125 z M 79.71875 27.46875 L 66.9375 33.65625 L 68.53125 44.8125 L 82.53125 47.21875 L 79.71875 27.46875 z M 41.71875 41.0625 C 41.582761 41.058251 41.422178 41.073761 41.28125 41.09375 L 8.15625 45.78125 L 7.90625 44.09375 L 2.78125 43.9375 L 4 52.53125 L 8.875 50.9375 L 8.625 49.25 L 41.78125 44.5625 C 42.908673 44.40259 43.699053 43.493996 43.5625 42.53125 C 43.443014 41.688847 42.670671 41.092246 41.71875 41.0625 z M 51.53125 57.21875 L 28.625 60.4375 C 28.625117 63.279515 28.625057 61.501735 28.625 64.34375 L 30.90625 64.34375 L 32.40625 64.34375 L 17.21875 97.46875 C 16.804629 98.371268 17.19123 99.429629 18.09375 99.84375 C 18.996268 100.25787 20.054629 99.87127 20.46875 98.96875 L 36.34375 64.34375 L 38.28125 64.34375 L 38.28125 98.21875 C 38.28125 99.211743 39.069507 100 40.0625 100 C 41.055493 100 41.875 99.211743 41.875 98.21875 L 41.875 64.34375 L 43.6875 64.34375 L 59.71875 98.96875 C 60.136118 99.869771 61.192729 100.26112 62.09375 99.84375 C 62.994771 99.426382 63.386118 98.338521 62.96875 97.4375 L 47.65625 64.34375 L 49.09375 64.34375 L 51.53125 64.34375 L 51.53125 57.21875 z "></path>
+                  <path id="reel-1" d="m 17.763265,10.60917 c -1.849868,0 -3.349902,1.500036 -3.349902,3.349902 0,1.849868 1.500034,3.34863 3.349902,3.34863 1.849865,0 3.348629,-1.498762 3.348629,-3.34863 0,-1.849866 -1.498764,-3.349902 -3.348629,-3.349902 z m -8.0539896,5.851215 c -1.849868,0 -3.3499023,1.500032 -3.3499023,3.349898 0,1.849866 1.5000343,3.349897 3.3499023,3.349897 1.8498656,0 3.3498996,-1.500031 3.3498996,-3.349897 0,-1.849866 -1.500034,-3.349898 -3.3498996,-3.349898 z m 16.1016246,0 c -1.849868,0 -3.3499,1.500032 -3.3499,3.349898 0,1.849866 1.500032,3.349897 3.3499,3.349897 1.849865,0 3.348629,-1.500031 3.348629,-3.349897 0,-1.849866 -1.498764,-3.349898 -3.348629,-3.349898 z m -13.023579,9.460259 c -1.849867,0 -3.3498994,1.500032 -3.3498994,3.349902 0,1.849865 1.5000324,3.348629 3.3498994,3.348629 1.849867,0 3.3499,-1.498764 3.3499,-3.348629 0,-1.84987 -1.500033,-3.349902 -3.3499,-3.349902 z m 9.950613,0 c -1.849866,0 -3.348629,1.500032 -3.348629,3.349902 0,1.849865 1.498763,3.348629 3.348629,3.348629 1.849865,0 3.349901,-1.498764 3.349901,-3.348629 0,-1.84987 -1.500036,-3.349902 -3.349901,-3.349902 z" transform="rotate(218.686 17.66 22.74)">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" begin="0" from="0 17.66 22.74" to="360 17.66 22.74" repeatCount="indefinite"></animateTransform>
+                  </path>
+                  <path id="reel-2" d="m 51.483904,5.8171007 c -1.849872,0 -3.349908,1.5000388 -3.349908,3.3499074 0,1.8498709 1.500036,3.3486359 3.349908,3.3486359 1.849868,0 3.348635,-1.498765 3.348635,-3.3486359 0,-1.8498686 -1.498767,-3.3499074 -3.348635,-3.3499074 z M 43.4299,11.668326 c -1.849872,0 -3.349908,1.500034 -3.349908,3.349904 0,1.849869 1.500036,3.349903 3.349908,3.349903 1.849869,0 3.349906,-1.500034 3.349906,-3.349903 0,-1.84987 -1.500037,-3.349904 -3.349906,-3.349904 z m 16.101654,0 c -1.849871,0 -3.349907,1.500034 -3.349907,3.349904 0,1.849869 1.500036,3.349903 3.349907,3.349903 1.849867,0 3.348635,-1.500034 3.348635,-3.349903 0,-1.84987 -1.498768,-3.349904 -3.348635,-3.349904 z m -13.023602,9.460276 c -1.849871,0 -3.349907,1.500034 -3.349907,3.349908 0,1.849869 1.500036,3.348635 3.349907,3.348635 1.849869,0 3.349905,-1.498766 3.349905,-3.348635 0,-1.849874 -1.500036,-3.349908 -3.349905,-3.349908 z m 9.950632,0 c -1.849872,0 -3.348637,1.500034 -3.348637,3.349908 0,1.849869 1.498765,3.348635 3.348637,3.348635 1.849867,0 3.349905,-1.498766 3.349905,-3.348635 0,-1.849874 -1.500038,-3.349908 -3.349905,-3.349908 z" transform="rotate(41.4924 51.4 17.7)">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="3.6s" begin="0" from="0 51.4 17.7" to="360 51.4 17.7" repeatCount="indefinite"></animateTransform>
+                  </path>
+                </svg> </div>
+                <div class="spaceXX show-on-scroll is-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org" id="camera-loader" width="85.708488" height="100">
+                      <defs id="defs12"></defs>
+                      <path id="camera-body" d="M 51.5625 0 C 50.667739 -0.00962983 49.756943 0.05800477 48.84375 0.1875 C 41.018415 1.2971691 35.117198 7.3376842 33.8125 14.71875 C 30.504071 7.9918491 23.138091 3.8277945 15.3125 4.9375 C 5.573576 6.3185261 -1.1937811 15.321773 0.1875 25.0625 C 1.030765 31.00916 4.7245026 35.850708 9.6875 38.40625 L 10.59375 44.84375 L 41.21875 40.5 C 42.618434 40.301472 43.966737 41.101389 44.15625 42.4375 C 44.34576 43.773612 43.274684 44.957723 41.875 45.15625 L 11.25 49.5 L 12.40625 57.6875 C 12.593105 59.005185 13.837018 59.937079 15.15625 59.75 L 64.25 52.78125 C 65.567815 52.594377 66.499355 51.348937 66.3125 50.03125 L 63.5625 30.78125 C 67.618077 26.946961 69.843395 21.259142 69 15.3125 C 67.748216 6.4849658 60.211858 0.09304631 51.5625 0 z M 51.28125 3.75 C 58.168631 3.6506107 64.22589 8.6859174 65.21875 15.6875 C 66.295328 23.279482 61.029156 30.329715 53.4375 31.40625 C 45.84552 32.482829 38.795329 27.18573 37.71875 19.59375 C 36.641441 11.998855 41.938942 4.9828747 49.53125 3.90625 C 50.124347 3.8221462 50.697574 3.7584222 51.28125 3.75 z M 17.5625 8.53125 C 24.449868 8.4318561 30.507144 13.46718 31.5 20.46875 C 32.576577 28.060719 27.310389 35.110969 19.71875 36.1875 C 12.126783 37.264077 5.0765804 31.966969 4 24.375 C 2.9226914 16.780121 8.2202041 9.7641225 15.8125 8.6875 C 16.405598 8.603395 16.978824 8.5396714 17.5625 8.53125 z M 79.71875 27.46875 L 66.9375 33.65625 L 68.53125 44.8125 L 82.53125 47.21875 L 79.71875 27.46875 z M 41.71875 41.0625 C 41.582761 41.058251 41.422178 41.073761 41.28125 41.09375 L 8.15625 45.78125 L 7.90625 44.09375 L 2.78125 43.9375 L 4 52.53125 L 8.875 50.9375 L 8.625 49.25 L 41.78125 44.5625 C 42.908673 44.40259 43.699053 43.493996 43.5625 42.53125 C 43.443014 41.688847 42.670671 41.092246 41.71875 41.0625 z M 51.53125 57.21875 L 28.625 60.4375 C 28.625117 63.279515 28.625057 61.501735 28.625 64.34375 L 30.90625 64.34375 L 32.40625 64.34375 L 17.21875 97.46875 C 16.804629 98.371268 17.19123 99.429629 18.09375 99.84375 C 18.996268 100.25787 20.054629 99.87127 20.46875 98.96875 L 36.34375 64.34375 L 38.28125 64.34375 L 38.28125 98.21875 C 38.28125 99.211743 39.069507 100 40.0625 100 C 41.055493 100 41.875 99.211743 41.875 98.21875 L 41.875 64.34375 L 43.6875 64.34375 L 59.71875 98.96875 C 60.136118 99.869771 61.192729 100.26112 62.09375 99.84375 C 62.994771 99.426382 63.386118 98.338521 62.96875 97.4375 L 47.65625 64.34375 L 49.09375 64.34375 L 51.53125 64.34375 L 51.53125 57.21875 z "></path>
+                      <path id="reel-1" d="m 17.763265,10.60917 c -1.849868,0 -3.349902,1.500036 -3.349902,3.349902 0,1.849868 1.500034,3.34863 3.349902,3.34863 1.849865,0 3.348629,-1.498762 3.348629,-3.34863 0,-1.849866 -1.498764,-3.349902 -3.348629,-3.349902 z m -8.0539896,5.851215 c -1.849868,0 -3.3499023,1.500032 -3.3499023,3.349898 0,1.849866 1.5000343,3.349897 3.3499023,3.349897 1.8498656,0 3.3498996,-1.500031 3.3498996,-3.349897 0,-1.849866 -1.500034,-3.349898 -3.3498996,-3.349898 z m 16.1016246,0 c -1.849868,0 -3.3499,1.500032 -3.3499,3.349898 0,1.849866 1.500032,3.349897 3.3499,3.349897 1.849865,0 3.348629,-1.500031 3.348629,-3.349897 0,-1.849866 -1.498764,-3.349898 -3.348629,-3.349898 z m -13.023579,9.460259 c -1.849867,0 -3.3498994,1.500032 -3.3498994,3.349902 0,1.849865 1.5000324,3.348629 3.3498994,3.348629 1.849867,0 3.3499,-1.498764 3.3499,-3.348629 0,-1.84987 -1.500033,-3.349902 -3.3499,-3.349902 z m 9.950613,0 c -1.849866,0 -3.348629,1.500032 -3.348629,3.349902 0,1.849865 1.498763,3.348629 3.348629,3.348629 1.849865,0 3.349901,-1.498764 3.349901,-3.348629 0,-1.84987 -1.500036,-3.349902 -3.349901,-3.349902 z" transform="rotate(218.686 17.66 22.74)">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" begin="0" from="0 17.66 22.74" to="360 17.66 22.74" repeatCount="indefinite"></animateTransform>
+                      </path>
+                      <path id="reel-2" d="m 51.483904,5.8171007 c -1.849872,0 -3.349908,1.5000388 -3.349908,3.3499074 0,1.8498709 1.500036,3.3486359 3.349908,3.3486359 1.849868,0 3.348635,-1.498765 3.348635,-3.3486359 0,-1.8498686 -1.498767,-3.3499074 -3.348635,-3.3499074 z M 43.4299,11.668326 c -1.849872,0 -3.349908,1.500034 -3.349908,3.349904 0,1.849869 1.500036,3.349903 3.349908,3.349903 1.849869,0 3.349906,-1.500034 3.349906,-3.349903 0,-1.84987 -1.500037,-3.349904 -3.349906,-3.349904 z m 16.101654,0 c -1.849871,0 -3.349907,1.500034 -3.349907,3.349904 0,1.849869 1.500036,3.349903 3.349907,3.349903 1.849867,0 3.348635,-1.500034 3.348635,-3.349903 0,-1.84987 -1.498768,-3.349904 -3.348635,-3.349904 z m -13.023602,9.460276 c -1.849871,0 -3.349907,1.500034 -3.349907,3.349908 0,1.849869 1.500036,3.348635 3.349907,3.348635 1.849869,0 3.349905,-1.498766 3.349905,-3.348635 0,-1.849874 -1.500036,-3.349908 -3.349905,-3.349908 z m 9.950632,0 c -1.849872,0 -3.348637,1.500034 -3.348637,3.349908 0,1.849869 1.498765,3.348635 3.348637,3.348635 1.849867,0 3.349905,-1.498766 3.349905,-3.348635 0,-1.849874 -1.500038,-3.349908 -3.349905,-3.349908 z" transform="rotate(41.4924 51.4 17.7)">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="3.6s" begin="0" from="0 51.4 17.7" to="360 51.4 17.7" repeatCount="indefinite"></animateTransform>
+                      </path>
+                    </svg> </div>
+                <div class="e_s_c">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="images/event.png" height="100px" width="100px">
+                                <div class="data">
+                                    <p>
+                                        <h2>20+</h2>
+                                        <h3>Event</h3>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src=" images/college.png " height="100px " width="100px ">
+                                <div class="data ">
+                                    <p>
+                                        <h2>20+</h2>
+                                        <h3>College</h3>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src=" images/people.png " height="100px " width="100px ">
+                                <div class="data ">
+                                    <p>
+                                        <h2>3000+</h2>
+                                        <h3>People</h3>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact " style="width: 100%; position: relative; margin-top: 5%; z-index:4;">
+                    <h1>Contact US</h1>
+                     <a href="mailto:fgiet.yantragene@gmail.com?subject=subject&cc=cc@example.com" style="text-decoration:none; margin:5px;" ><p style="font-weight:bold">yantragene2020@gmail.com</p></a>
+                    <div class="contact_det">
+                        <ul>
+                            <li>
+                                <ul class="map">
+                                    <li style="list-style-type: none; ">
+
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.4756618555607!2d81.23780431500414!3d26.246221483419156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ba3c239a79f53%3A0x2eb6d49e88aa224a!2sFeroze%20Gandhi%20Institute%20Of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1583001416235!5m2!1sen!2sin"
+                                            frameborder="0" style="border:0;" allowfullscreen=""></iframe></li>
+                                    <li>
+                                        <li style="list-style-type: none; ">
+                                            <h3>Help Desk</h3>
+                                            <ul>
+                                                <li style="list-style-image: url( 'icons/1x/person.png'); ">
+                                                    <h2>Abheejay</h2>
+                                                </li>
+                                                <li style="list-style-image: url( 'icons/1x/phone.png'); ">
+                                                    <h2>8604841963</h2>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li style="list-style-type: none; ">
+                                        <h3>Technical Head</h3>
+                                        <ul>
+                                            <li style="list-style-image: url( 'icons/1x/person.png'); ">
+                                                <h2>Nitesh Kumar Singh </h2>
+                                            </li>
+                                            <li style="list-style-image: url( 'icons/1x/phone.png'); ">
+                                                <h2>7905985350</h2>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="list-style-type: none; ">
+                                        <h3>Accomodation</h3>
+                                        <ul>
+                                            <li style="list-style-image: url( 'icons/1x/person.png'); ">
+                                                <h2>Ramavtar</h2>
+                                            </li>
+                                            <li style="list-style-image: url( 'icons/1x/phone.png'); ">
+                                                <h2>9565365359</h2>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="help">
+                        <ul><li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.4756618555607!2d81.23780431500414!3d26.246221483419156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ba3c239a79f53%3A0x2eb6d49e88aa224a!2sFeroze%20Gandhi%20Institute%20Of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1583001416235!5m2!1sen!2sin"
+                                            frameborder="0" style="border:0;" allowfullscreen=""></iframe></li>
+                                            <li class="hands"><a href="help.html">Help and Support</a></li></ul>
+                        
+                                            </div>
+                    <center>
+                        <div class="bottom">
+                            <img src="https://svgshare.com/i/H8J.svg " width="100%" height="50px" style=" opacity: .7;padding-left:10%;
+                        padding-right:10%; "><br>
+                            <h4>Yantargene © All rights reserved | Privacy & policy</h4>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </center>
+        <a href="#top" class="scrollup">
+            <img src="icons/1x/arrowup.png ">
+        </a>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    //      $("document").ready( function () {
+    //     alert("...............Alert !!!!............. ? Yantragene is postponded for a while due to  coronavirus (known as COVID-19) .Stay safe and take care of yourself and your family!" );
+    // }); 
+
+    </script>
+
+</body>
+
+</html>
